@@ -3,14 +3,7 @@
     padding: 12px 2px;
     font-size: 16px;
     }
-    .ServiceTopLeft p {
-      font-size: 17px;
-      line-height: 24px;
-  }
-  .ServicePoints ul li {
-   
-    font-size: 16px;
-    line-height: 23px;}
+    
 
 }
 
@@ -68,62 +61,8 @@
     margin-top: 18px;
     transition: all .3s;
 }
-.AboutLogo {
-  width: 40%;
-  margin: 60px auto 40px;
-}
-.AboutLeft{
-  width: 100%;
-}
-.AboutRight{
-  width: 100%;
-}
-.AboutRight article {
-  font-size: 18px;
-  line-height: 17px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-.AboutRight h2{
-font-size: 30px;
-text-align: center;
-padding-bottom: 20px;
-}
-.AboutRight p{text-align: justify;font-size: 17px;line-height: 25px;}
-.Services h2{
-font-size: 30px;
-text-align: center;
-padding-bottom: 20px;
-}
-.Services ul li{
-width: 100%;
-margin-bottom: 25px;
-}
-.ServiceIcon {
-margin: 26px auto;
-width: 103px;
-}
 
-.Services ul li h3{
-font-size: 24px;
-line-height: 24px;
-padding-bottom: 21px;
-}
-.Services ul li p{font-size: 16px;line-height: 25px;max-height: none;box-sizing: border-box;padding: 0 15px;text-align: justify;height: auto;}
-.ExploreBtn {
-padding: 10px 23px;
-font-size: 19px;
-margin-top: 18px;
-transition: all .3s;
-}
-.Awards h2{
-font-size: 30px;
-text-align: center;
-line-height: 30px;
-padding-bottom: 20px;
-}
-
-.MoroojInfo {
+.CarWebInfo {
 width: 100%;
 text-align: center;
 }
@@ -162,35 +101,6 @@ text-align: center;
 text-align: center;
 padding: 5% 0;
 }
-.Banner{
-  margin-top: 68px;
-
-}
-.AboutPageLeft{
-  width: 58%;
-  margin: 50px auto;
-}
-.AboutPageRight{
-  width: 100%;
-  text-align: center;
-}
-.AboutPageRight p{
-  font-size: 16px;
-  line-height: 25px;
-  max-height: none;
-  box-sizing: border-box;
-  padding: 0 15px;
-  text-align: justify;
-  }
-  .AboutPageRight{
-    flex-flow: wrap row;
-  }
-  .AboutPageRight h2{
-    font-size: 26px;
-    text-align: center;
-    padding-bottom: 24px;
-    line-height: 32px;
-    }
 .WhychooseUsHead{
   width: 100%;
 }
@@ -217,35 +127,35 @@ padding: 5% 0;
   text-align: justify;
 
     }
-    .FeaturesLisitng:after,.FeaturesLisitng:before{
+    .CarsLisitng:after,.CarsLisitng:before{
       display: none;
     }
-    .FeaturesItem{
+    .CarsItem{
       border-radius: 10px;
       overflow: hidden;
       padding: 0;
     }
   
-    .FeaturesImage {
+    .CarsImage {
       width: 100%;
       height: 150px;
       display: block;
       position: relative;
       left: 0;
   }
-    .FeaturesDetails{
+    .CarsDetails{
 padding-left: 0;
 padding: 5% 20px;
 box-sizing: border-box;
     }
 
-    .FeaturesDetails h2{
+    .CarsDetails h2{
       font-size: 26px;
       text-align: center;
       line-height: 32px;
     }
 
-    .FeaturesDetails p {
+    .CarsDetails p {
       font-size: 16px;
       line-height: 25px;
       max-height: none;
@@ -253,219 +163,12 @@ box-sizing: border-box;
       padding: 0 15px;
       text-align: justify;
   }
-  .FeaturesDetails h2:after {
+  .CarsDetails h2:after {
    
     position: relative;
     margin: 8px auto 0;
 }
-    .WavyBanner {
-    
-      margin-top: 67px;
-  }
-  .AnimatedBannerTitles h2{
-    font-size: 40px;
-text-align: center;
-line-height: 40px;
-/* display: none; */
-  }
-  .AnimatedBannerTitles h4{
-    text-align: center;
-padding-bottom: 20px;
-padding-top: 5px;
-
-  }
-  .ServiceTopLeft {
-    width: 100%;
-    margin: auto 0;
-    text-align: center;
-}
-.services {
-  margin: 25px auto;
-  width: 90%;
-}
-.ServiceTopLeft h1{
-  font-size: 35px;
-  line-height: 35px;
-}
-.ServiceTopLeft p{
-  font-size: 16px;
-  line-height: 25px;
-  max-height: none;
-  box-sizing: border-box;
-  padding: 0 15px;
-  text-align: justify;
-}
-.ServicesTopRight{
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 0;
-  display: block;
-}
-.ServicesTopRight img {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 0;
-  display: block;
-}
-.ServiceTags h2 {
-  font-size: 26px;
-  margin-top: 8px;
-}
-.ServiceTags h3 {
-  font-size: 20px;
-  margin-top: 8px;
-}
-.ServicesWhyChooseUs h2 {
-  font-size: 20px;
-  line-height: 22px;
-  padding-left: 0;
-  text-align: center;
-  border-left: 0;
-  padding-bottom: 25px;
-}
-.ServicesWhyChooseUs h2 br {
- display: none;
-}
-.ServicesWhyChooseUs p{
-  font-size: 16px;
-  line-height: 25px;
-  max-height: none;
-  box-sizing: border-box;
-  padding: 0 15px;
-  text-align: justify;
-}
-.ServicesFeaturesFlex h2{
-  width: 100%;
-  font-size: 30px;
-  line-height: 35px;
-  text-align: center;
-  padding-bottom: 15px;
-}
-.ServicesFeaturesFlex h2:before,.ServicesFeaturesFlex h2:after{
- display: none;
-
-}
-.ServicesFeaturesFlex p{
-  font-size: 16px;
-  line-height: 25px;
-  max-height: none;
-  box-sizing: border-box;
-  text-align: justify;
-  width: 100%;
-}
-.ServicePoints {
-  width: 100%;
-}
-.ServicePoints ul li{
-  width: 100%;
-  margin: 0 auto 5px;
-  font-size: 16px;
-  line-height: 25px;
-  padding-left: 50px;
-}
-.ServicePoints ul li:before {
-  width: 17px;
-  height: 17px;
-  font-size: 17px;
-  line-height: 17px;
-  padding: 11px;
-  top: 10px;
-}
-.GetInTouchHead{
-  width: 100%;
-}
-.GetInTouchHead h2{
-  font-size: 35px;
-  line-height: 35px;
-}
-.GetInTouchDetails{
-  width: 100%;
-  text-align: center;
-}
-.GetInTouchBtn{
-  font-size: 18px;
-  line-height: 18px;
-  padding: 10px 20px;
-  margin: 20px auto;
-}
-
-.LgList ul li{
-  width: 100%;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 20px 20px;
-  text-align: justify;
-  margin: 0px auto 15px;
-}
-.ProductCards {
-  
-  width: 100%;
-  margin: 0;
-  margin-bottom: 12px !important;
-}
-.ContactUs {
-  width: 100%;
-}
-.Social{
-  width: 100%;
-}
-
-
-
-
-.LgList h2{
-  font-size: 20px;
-}
-.ContactTopBlocks{
-  text-align: center;
-  width: 100%;
-  margin-bottom: 40px;
-}
-.ContactIcon {
-  width: 100%;
-  flex-flow: wrap column;
-  text-align: center;
-}
-.ContactIcon i{
-  margin: 0 auto 20px;
-}
-.ContactDetails {
-margin-top: 10px;
-}
-.ContactDetails p{
-  text-align: center;
-}
-.Social{
-  display: flex;
-}
-.Social nav {
-  width: 55%;
-  margin: auto;
-}
-
-.Social nav a{
-  font-size: 18px;
-  
-}
-.HaveAnIdea{
-  padding: 5% 0;
-  width: 100%;
-  text-align: center;
-}
-.GetAquateBtn {
-
-  font-size: 20px;
-  padding: 12px 26px;
-}
-.Form {
-  width: 100%;
-
-  }
-
-  .sendBtn{
-    font-size: 20px;
-    padding: 12px 26px;
-  }
+   
 }
   
   
