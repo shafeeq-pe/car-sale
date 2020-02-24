@@ -540,14 +540,19 @@ footer {
 }
 .InnerFooter p,
 .InnerFooter a {
-    color: #8FB3C5;
+    color: #5e5e5e;
     font-size: 1vmax;
     display: block;
-    line-height: 1.4vmax;
+    line-height: 1.5vmax;
 }
 .InnerFooter a {
     cursor: pointer;
     transition: all .3s;
+}
+.InnerFooter a i{
+  font-size: 18px;
+  width: 20px;
+  color: #ff3122;
 }
 .InnerFooter a:hover {
     cursor: pointer;
@@ -569,14 +574,14 @@ footer {
 .FooterHeads h4 {
     text-align: left;
     display: inline-block;
-    color: #fff;
+    color: #ffffff;
     font-size: 1.1vmax;
     line-height: 1vmax;
     text-transform: uppercase;
 }
-.FooterHeads h4 span {
+/* .FooterHeads h4 span {
     color: #6EAAC9;
-}
+} */
 .CarWebInfo {
     width: 25%;
 }
@@ -584,7 +589,7 @@ footer {
     width: 15%;
 }
 .MobileAppLinks {
-    width: 30%;
+    width: auto;
 }
 .CreativeDesignLinks {
     width: 25%;
@@ -715,7 +720,7 @@ width: 38% !important;
     display: none;
 }
 #slides .slides-container li {
-    background: #f2f2f2 url(../images/bg.png);
+    background: #ffffff url(../images/bg.png);
     background-size: cover;
     background-position: bottom;
     /* display: flex !important; */
@@ -914,18 +919,18 @@ width: 38% !important;
     width: 100%;
     box-sizing: border-box;
     position: relative;
-    padding-top: 2vmax;
     display: flex;
     flex-flow: row wrap;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .CarsImage {
-    width: 60%;
+    width: 50%;
     height: 180px;
     display: block;
     position: relative;
     background: Red;
-    left: 0;
-    top: 0;
+    
 }
 .CarsImage img {
     object-position: center;
@@ -935,13 +940,13 @@ width: 38% !important;
 }
 .CarsDetails {
     display: block;
-    width: 40%;
+    width: 50%;
     box-sizing: border-box;
     padding: 29px;
     background: #F2F4F6;
 }
 .CarsDetails h2 {
-    font-size: 1.5vmax;
+    font-size: 1.3vmax;
     line-height: 1.5vmax;
     color: #0e3040;
     position: relative;
@@ -967,6 +972,500 @@ width: 38% !important;
     padding-bottom: 10px;
     margin-bottom: 25px;
 }
+.CarSearch{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    padding: 5%;
+}
+
+.SidebarAndCars{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    max-width: 1300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+    
+}
+
+.SideBar{
+    width: 25%;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, .1) 1px 2px 3px;
+    margin: 0 0;
+  
+}
+.StickySidebar{
+   
+    display: block;
+}
+.FiltersHead {
+    padding: 19px;
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    position: sticky;
+    top: 60px;
+  
+}
+.FiltersHead h2{
+  font-size: 22px;
+  display: inline-block;
+  margin: auto 0;
+}
+.ResetBtn{
+    background-color: #fdf3f3;
+    border: none;
+    color: #ff3122;
+    outline: none;
+    padding: 10px 19px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 37px;
+}
+.accordion {
+    width: 100%;
+    max-width: 100%;
+    background: #FFF;
+   
+  }
+  
+  .accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #a2a2a2;
+    font-size: 14px;
+    font-weight: 700;
+    border-top: 1px solid #d8d8d8;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+  }
+  
+  .accordion li:last-child .link { border-bottom: 0; }
+  
+  .accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #8c8c8c;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+  }
+  
+  .accordion li.open .link { color: #000000; }
+  
+  .accordion li.open i { color: #000000; }
+  
+  .accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  /**
+   * Submenu
+   -----------------------------*/
+  
+  
+  .AccordionContent {
+    display: none;
+    background: #ffffff;
+    font-size: 14px;
+   
+  }
+  .ScrollContents{
+      width: 100%;
+      max-height: 150px;
+      overflow: hidden;
+  }
+  .SearchValues{
+      width: 90%;
+      padding: 10px;
+      display: block;
+      box-sizing: border-box;
+      margin: 10px auto 5px;
+      border-radius: 50px;
+      border:1px solid #c2c2c2;
+      outline: none !important;
+      font-size: 16px;
+      padding-left: 20px;
+  }
+  .SearchValues:focus{
+   
+    border:1px solid #ff4646;
+}
+.SelectFlex{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding:0 18px;
+     padding-bottom: 20px;
+}
+.SelectFlex select{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border:1px solid #c2c2c2;
+    outline: none !important;
+    font-size: 16px;}
+    .SelectFlex select:focus{
+    border:1px solid #ff4646;
+}
+.Year.SelectFlex select{
+    width: 48%;
+}
 
 
 
+.InputFlex{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding:0 18px;
+     padding-bottom: 20px;
+}
+ .InputFlex input{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border:1px solid #c2c2c2;
+    outline: none !important;
+    font-size: 16px;}
+    .InputFlex input:focus{
+    border:1px solid #ff4646;
+}
+.Price.InputFlex input{
+    width: 48%;
+}
+  
+
+  
+  .AccordionContent ul li {border-bottom: 1px solid #f3f3f3;}
+  
+  .AccordionContent label {
+    display: block;
+    text-decoration: none;
+    color: #464646;
+    padding: 9px;
+    padding-left: 20px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  
+  .AccordionContent a:hover {
+    background: #000000;
+    color: #FFF;
+  }
+
+  .pure-material-checkbox {
+    z-index: 0;
+    position: relative;
+    display: inline-block;
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Input */
+.pure-material-checkbox > input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    left: 11px;
+    top: 2px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    box-shadow: none;
+    outline: none;
+    opacity: 0;
+    transform: scale(1);
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+/* Span */
+.pure-material-checkbox > span {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Box */
+.pure-material-checkbox > span::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 3px 11px 3px 1px;
+    border: solid 2px; /* Safari */
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    vertical-align: top;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+/* Checkmark */
+.pure-material-checkbox > span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 21px;
+    width: 8px;
+    height: 3px;
+    border: solid 2px transparent;
+    border-right: none;
+    border-top: none;
+    transform: translate(3px, 4px) rotate(-45deg);
+}
+
+/* Checked, Indeterminate */
+.pure-material-checkbox > input:checked,
+.pure-material-checkbox > input:indeterminate {
+    background-color: rgb(var(--pure-material-primary-rgb, 255, 49, 34));
+}
+
+.pure-material-checkbox > input:checked + span::before,
+.pure-material-checkbox > input:indeterminate + span::before {
+    border-color: rgb(var(--pure-material-primary-rgb, 255, 49, 34));
+    background-color: rgb(var(--pure-material-primary-rgb, 255, 49, 34));
+}
+
+.pure-material-checkbox > input:checked + span::after,
+.pure-material-checkbox > input:indeterminate + span::after {
+    border-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+}
+
+.pure-material-checkbox > input:indeterminate + span::after {
+    border-left: none;
+    transform: translate(4px, 3px);
+}
+
+/* Hover, Focus */
+.pure-material-checkbox:hover > input {
+    opacity: 0.04;
+}
+
+.pure-material-checkbox > input:focus {
+    opacity: 0.12;
+}
+
+.pure-material-checkbox:hover > input:focus {
+    opacity: 0.16;
+}
+
+/* Active */
+.pure-material-checkbox > input:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+}
+
+.pure-material-checkbox > input:active + span::before {
+    border-color: rgb(var(--pure-material-primary-rgb, 255, 49, 34));
+}
+
+.pure-material-checkbox > input:checked:active + span::before {
+    border-color: transparent;
+    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+}
+
+/* Disabled */
+.pure-material-checkbox > input:disabled {
+    opacity: 0;
+}
+
+.pure-material-checkbox > input:disabled + span {
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    cursor: initial;
+}
+
+.pure-material-checkbox > input:disabled + span::before {
+    border-color: currentColor;
+}
+
+.pure-material-checkbox > input:checked:disabled + span::before,
+.pure-material-checkbox > input:indeterminate:disabled + span::before {
+    border-color: transparent;
+    background-color: currentColor;
+}
+.CarsLisitingAndPagination{
+    width: 70%;
+    margin: 0 auto;
+}
+.CarsLisitingAndPagination .CarList{
+    width: 100%;
+}
+.CarsLisitingAndPagination .CarList ul{
+    width: 100%;
+}
+.CarsLisitingAndPagination .CarList ul li {
+    width: 100%;
+}
+.CarsLisitingAndPagination .CarList ul li .Box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, .1) 1px 2px 3px;
+    background-color: #fff;
+    position: relative;
+}
+
+.CarsLisitingAndPagination .CarList ul li .CarImage{
+    width: 40%;
+  
+}
+.CarsLisitingAndPagination .CarList ul li .CarDetails{
+    box-sizing: border-box;
+    width: 60%;
+padding: 20px 30px 0;}
+.CarsLisitingAndPagination .CarList ul li .CarDetails h2{
+    color: #363636;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px rgba(0, 0, 0, .1) solid;
+}
+
+    
+.CarsLisitingAndPagination .CarList ul li .CarDetails  .MoreDetails{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 10px;
+    }
+    .CarsLisitingAndPagination .CarList ul li .CarDetails .MoreDetails p{
+        width: 60%;
+        font-size: 15px;
+        color: #999;
+    }
+    .CarsLisitingAndPagination .CarList ul li .CarDetails .MoreDetails p:nth-child(2n){
+        width: 30%;
+        font-size: 15px;
+        color: #999;
+    }
+    .CarsLisitingAndPagination .CarList ul li  .CarDetails .MoreDetails p span{
+        width: 35%;
+        font-size: 15px;
+        color: #111;
+        padding-left: 5px;
+    }
+    
+    
+  
+
+    .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px rgba(0, 0, 0, .1) solid;
+    }
+
+    .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .CarPrice{
+        color: #cc0808;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: auto 0;
+      
+    
+    }
+    .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .CarPrice i{
+        color: #9b9b9b;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: capitalize;
+      
+    
+    }
+    .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .Buttons{
+width: auto;
+display: flex;
+
+    }
+    .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .Buttons .ViewDetBtn{
+        width: 125px;
+        display: block;
+        padding:12px 10px 10px;
+        text-align: center;
+        box-sizing: border-box;
+        border: #666 1px solid;
+        color: #666;
+        font-size: 16px;
+        margin-right: 10px;
+        border-radius: 30px;
+        line-height: 16px;cursor: pointer;
+        transition: all .3s;
+       
+            }
+            .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .Buttons .ViewDetBtn:hover{
+              
+                background-color: #e9e9e9;
+            }
+            
+
+            .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .Buttons .OrderBtn{
+                width: 110px;
+                display: block;
+                padding:12px 10px 10px;
+                text-align: center;
+                box-sizing: border-box;
+                background-color: #ff3122;
+                color: #fff;
+                font-size: 16px;
+                line-height: 16px;
+                border-radius: 30px;
+                cursor: pointer;
+                box-shadow: rgb(255, 0, 0,0.7) 1px 5px 10px;
+                transition: all .3s;
+                    }
+                    .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .Buttons .OrderBtn:hover{
+              
+                      box-shadow: rgb(255, 0, 0,0.0) 0px 0px 0px;
+                      transition: all .3s;
+                    }
+                    
