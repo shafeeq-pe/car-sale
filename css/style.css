@@ -1470,13 +1470,13 @@ position: absolute !important;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        margin-top: 20px;
-        padding-top: 4px;
-        border-top: 1px rgba(0, 0, 0, .1) solid;
+        margin-top: 13px;
+        padding-top: 9px;
+        border-top: 1px rgba(255, 255, 255, 0.1) solid;
     }
 
     .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .CarPrice{
-        color: #cc0808;
+        color: #ffffff;
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
