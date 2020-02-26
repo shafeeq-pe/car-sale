@@ -1001,14 +1001,18 @@ width: 38% !important;
     position: fixed !important;
     height: 100vh;
     background: #151515;
+    padding-bottom: 120px;
+    padding-top: 81px;
+    box-sizing: border-box;
 }
 .StickySidebar{
    
 display: block;
-   
-padding-top: 81px;
-position: relative;
-overflow: hidden;
+   width: 100%;
+   left: 0;
+max-height: calc(100vh - 130px) !important;
+top: 80px;
+position: absolute !important;
 }
 .FiltersHead {
     padding: 19px;
@@ -1345,6 +1349,36 @@ overflow: hidden;
     border-color: transparent;
     background-color: currentColor;
 }
+
+.SearchBtn{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: block;
+    padding:18px 10px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #ff3122;
+    border:none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    box-shadow: rgb(255, 0, 0,0.7) 1px 5px 10px;
+    transition: all .3s;
+    outline: none;
+}
+.SearchBtn:hover{
+    background-color: #970f05;
+}
+
+
+
+
+
 .CarsLisitingAndPagination{
     width: 100%;
 }
