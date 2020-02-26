@@ -121,11 +121,12 @@ body {
     background: #fff;
 }
 .header {
-    width: 90%;
-    padding: 0 5%;
+    width: 96%;
+    padding: 0 2%;
     box-sizing: border-box;
     position: fixed;
     left: 0;
+    background: #00000052 !important;
     top: 0;
     z-index: 99999;
     transition: all 0.4s ease-in-out;
@@ -137,7 +138,7 @@ body {
 }
 .HeaderInner {
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     margin: 0 auto;
 }
 .logo {
@@ -145,7 +146,7 @@ body {
     width: 175px;
     transition: all .3s;
     float: left;
-    padding: 9px 0;
+    padding: 15px 0;
     position: relative;
     z-index: 100;
 }
@@ -153,18 +154,18 @@ body {
     display: block;
 }
 .white-bg {
-    background-color: #fff;
+    background-color: #000 !important;
     transition: all .3s;
-    box-shadow: rgba(126, 126, 126, 0.25) 0px 4px 10px;
-    -webkit-box-shadow: rgba(126, 126, 126, 0.25) 0px 4px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px;
     -moz-box-shadow: rgba(126, 126, 126, 0.25) 0px 4px 10px;
 }
 .white-bg .logo {
-    width: 110px;
-    padding: 8px 0 5px;
+    width: 155px;
+    padding: 18px 0 18px;
 }
 .white-bg .menu-right {
-    margin-top: 12px;
+    margin-top: 28px;
 }
 .white-bg .menu-right a {
     color: #333;
@@ -686,7 +687,7 @@ footer {
 }
 
 .DarkMenu * {
-    color: #000 !important;
+    color: #fff !important;
 }
 /*************************************************
 ******** ***   COMMON STYLES ENDS    *** *********
@@ -720,7 +721,7 @@ width: 38% !important;
     display: none;
 }
 #slides .slides-container li {
-    background: #ffffff url(../images/bg.png);
+    background: #000000 url(../images/bg.png);
     background-size: cover;
     background-position: bottom;
     /* display: flex !important; */
@@ -729,13 +730,13 @@ width: 38% !important;
 .SliderTexts {
     position: relative;
     top: 40%;
-    padding-left: 13%;
+    padding-left: 73px;
     float: left;
     height: 10%;
 }
 .SliderTexts h1 {
     font-size: 2vmax;
-    color: #333;
+    color: #fff;
     line-height: 2vmax;
 }
 .sliderBtn {
@@ -749,7 +750,7 @@ width: 38% !important;
     background: linear-gradient(138deg, rgb(255, 0, 0) 6%, rgb(255, 91, 28) 89%);
     color: #fff !important;
     transition: all .3s;
-    box-shadow: rgb(255, 113, 152) 0 8px 15px;
+    box-shadow: rgba(0, 0, 0, 0.28) 0 8px 15px;
 }
 .sliderBtn:hover {
     transition: all .3s;
@@ -773,23 +774,24 @@ width: 38% !important;
     margin: 0 auto;
     position: absolute;
     z-index: 3;
-    bottom: 0;
+    bottom: 155px;
     width: auto;
     right: 0;
 }
 .slides-navigation a {
     position: relative;
-    background: #ff3122;
+    background: #212020;
     padding: 17px 25px;
     display: block;
-    width: 55px;
+    width: 36px;
     font-size: 22px;
     line-height: 22px;
     padding: 10px 25px;
     text-align: center;
-    height: 55px;
+    height: 36px;
     box-sizing: border-box;
     transition: all .3s;
+    padding: 7px 2%;
 }
 .slides-navigation a:hover {
     transition: all .3s;
@@ -802,20 +804,21 @@ width: 38% !important;
 }
 .slides-navigation a.prev {
     left: 0;
+    margin-bottom: 5px;
 }
 .slides-navigation a.next {
     right: 0;
-    padding: 17px 2%;
+    /* padding: 17px 2%; */
 }
 .slides-pagination {
     position: absolute;
     z-index: 3;
     bottom: 0;
-    text-align: center;
+    text-align: left;
     width: auto;
-    right: 55px;
+    left: 42px;
     bottom: 0;
-    background: #fff;
+    /* background: #151515; */
     padding: 17px 2%;
 }
 .slides-pagination a {
@@ -840,8 +843,8 @@ width: 38% !important;
 
 .Bottom{
     width: 100%;
-    
-    padding: 5% 0 0;
+    padding: 0% 0 5%;
+    background: #000000;
 }
 
 
@@ -850,12 +853,12 @@ width: 38% !important;
     display: flex;
     flex-flow: row wrap;
     margin: 0 auto 3%;
-    max-width: 1300px;
+    max-width: initial;
     justify-content: space-between;
 }
 .WhychooseUsHead {
     width: 30%;
-    background: url(../images/headbg01.png);
+    /* background: url(../images/headbg01.png); */
     background-size: cover;
     padding: 5% 0;
 }
@@ -867,8 +870,8 @@ width: 38% !important;
     text-transform: uppercase;
 }
 .WhychooseUsHead h2 span {
-    color: #333;
-    display: block
+    color: #fff;
+    display: block;
 }
 .WhyChooseUsDetails {
     width: 60%;
@@ -877,40 +880,40 @@ width: 38% !important;
 .WhyChooseUsDetails p {
     font-size: 1.5vmax;
     line-height: 1.5vmax;
-    color: #1E4A61;
+    color: #ffffff;
     margin-top: 1.2vmax;
 }
 .CarsLisitng {
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto 6%;
+    width: 92%;
+    /* max-width: 1300px; */
+    margin: 0 auto 0;
     position: relative;
+    /* background: red; */
+    /* padding-bottom: 5%; */
 }
 .CarsLisitng:after {
     height: 100%;
     width: 150px;
     content: '';
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(12, 12, 12, 0) 25%, rgb(0, 0, 0) 100%);
     position: absolute;
     right: 0;
     display: block;
     top: 0;
     z-index: 9999;
-    ;
 }
 .CarsLisitng:before {
     height: 100%;
     width: 120px;
     content: '';
     background: rgb(255, 255, 255);
-    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(-90deg, rgba(12, 12, 12, 0) 25%, rgb(0, 0, 0) 100%);
     position: absolute;
     left: 0;
     display: block;
     top: 0;
     z-index: 9999;
-    ;
 }
 #Cars .owl-stage {
     padding-left: 20px !important;
@@ -943,12 +946,12 @@ width: 38% !important;
     width: 50%;
     box-sizing: border-box;
     padding: 29px;
-    background: #F2F4F6;
+    background: #131313;
 }
 .CarsDetails h2 {
     font-size: 1.3vmax;
     line-height: 1.5vmax;
-    color: #0e3040;
+    color: #ffffff;
     position: relative;
     padding-bottom: 15px;
     font-weight: lighter;
@@ -958,7 +961,7 @@ width: 38% !important;
     height: 5px;
     width: 100px;
     content: '';
-    background: #fff;
+    background: #383636;
     display: block;
     position: absolute;
     left: 0;
@@ -967,60 +970,66 @@ width: 38% !important;
 .CarsDetails p {
     font-size: 0.9vmax;
     line-height: 0.9vmax;
-    color: #0e3040;
+    color: #939494;
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 25px;
 }
-.CarSearch{
-    width: 90%;
-    margin: 0 auto;
-    background-color: #f1f1f1;
-    padding: 5%;
+.ContentArea{
+    width: 100%;
+    width: calc(100% - 275px);
+    margin: 0;
+    margin-left: 275px;
+    background: #0c0c0c;
 }
 
 .SidebarAndCars{
     width: 100%;
     margin: 0 auto;
-    background-color: #f1f1f1;
-    max-width: 1300px;
+    background-color: #0c0c0c;
+    max-width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    
-    
 }
 
 .SideBar{
-    width: 25%;
+    width: 275px;
     background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, .1) 1px 2px 3px;
     margin: 0 0;
-  
+    position: fixed !important;
+    height: 100vh;
+    background: #151515;
 }
 .StickySidebar{
    
-    display: block;
+display: block;
+   
+padding-top: 81px;
+position: relative;
+overflow: hidden;
 }
 .FiltersHead {
     padding: 19px;
-    border-bottom: 1px solid #dcdcdc;
+    border-bottom: 1px solid #040404;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     position: sticky;
-    top: 60px;
-  
+    top: 0;
+    border-top: 1px solid #040404;
 }
 .FiltersHead h2{
   font-size: 22px;
   display: inline-block;
   margin: auto 0;
+  color: #fff;
 }
 .ResetBtn{
-    background-color: #fdf3f3;
+    background-color: #232323;
     border: none;
-    color: #ff3122;
+    color: #929292;
     outline: none;
     padding: 10px 19px;
     font-size: 14px;
@@ -1030,18 +1039,17 @@ width: 38% !important;
 .accordion {
     width: 100%;
     max-width: 100%;
-    background: #FFF;
-   
+    /* background: #FFF; */
   }
   
   .accordion .link {
     cursor: pointer;
     display: block;
     padding: 15px 15px 15px 42px;
-    color: #a2a2a2;
+    color: #585858;
     font-size: 14px;
     font-weight: 700;
-    border-top: 1px solid #d8d8d8;
+    border-top: 1px solid #191919;
     position: relative;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -1056,7 +1064,7 @@ width: 38% !important;
     top: 16px;
     left: 12px;
     font-size: 18px;
-    color: #8c8c8c;
+    color: #8e8e8e;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -1066,11 +1074,12 @@ width: 38% !important;
     right: 12px;
     left: auto;
     font-size: 16px;
+    color: #333333;
   }
   
-  .accordion li.open .link { color: #000000; }
+  .accordion li.open .link {color: #ffffff;}
   
-  .accordion li.open i { color: #000000; }
+  .accordion li.open i {/* color: #ff0000; */}
   
   .accordion li.open i.fa-chevron-down {
     -webkit-transform: rotate(180deg);
@@ -1086,13 +1095,12 @@ width: 38% !important;
   
   .AccordionContent {
     display: none;
-    background: #ffffff;
+    background: #1d1d1d;
     font-size: 14px;
-   
   }
   .ScrollContents{
       width: 100%;
-      max-height: 150px;
+      max-height: 250px;
       overflow: hidden;
   }
   .SearchValues{
@@ -1106,6 +1114,8 @@ width: 38% !important;
       outline: none !important;
       font-size: 16px;
       padding-left: 20px;
+      background: transparent;
+      color: #fff;
   }
   .SearchValues:focus{
    
@@ -1118,18 +1128,26 @@ width: 38% !important;
     flex-flow: row wrap;
     justify-content: space-between;
     box-sizing: border-box;
-    padding:0 18px;
-     padding-bottom: 20px;
+    padding: 10px 18px;
+    /* padding-bottom: 20px; */
 }
 .SelectFlex select{
     width: 100%;
-    padding: 10px;
+    padding: 10px 20px;
     display: block;
     box-sizing: border-box;
     border-radius: 50px;
     border:1px solid #c2c2c2;
     outline: none !important;
-    font-size: 16px;}
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    }
+    .SelectFlex select option{
+        background: #000;
+        outline: none;
+        padding: 10px 0;
+    }
     .SelectFlex select:focus{
     border:1px solid #ff4646;
 }
@@ -1146,8 +1164,7 @@ width: 38% !important;
     flex-flow: row wrap;
     justify-content: space-between;
     box-sizing: border-box;
-    padding:0 18px;
-     padding-bottom: 20px;
+    padding: 11px 18px;
 }
  .InputFlex input{
     width: 100%;
@@ -1157,7 +1174,10 @@ width: 38% !important;
     border-radius: 50px;
     border:1px solid #c2c2c2;
     outline: none !important;
-    font-size: 16px;}
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    }
     .InputFlex input:focus{
     border:1px solid #ff4646;
 }
@@ -1167,12 +1187,12 @@ width: 38% !important;
   
 
   
-  .AccordionContent ul li {border-bottom: 1px solid #f3f3f3;}
+  .AccordionContent ul li {border-bottom: 1px solid #2f2f2f;}
   
   .AccordionContent label {
     display: block;
     text-decoration: none;
-    color: #464646;
+    color: #c1c1c1;
     padding: 9px;
     padding-left: 20px;
     -webkit-transition: all 0.25s ease;
@@ -1189,7 +1209,7 @@ width: 38% !important;
     z-index: 0;
     position: relative;
     display: inline-block;
-    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+    color: rgba(var(--pure-material-onsurface-rgb, 255, 255, 255), 0.87);
     font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
     font-size: 14px;
     line-height: 1.5;
@@ -1209,7 +1229,7 @@ width: 38% !important;
     border-radius: 50%;
     width: 36px;
     height: 36px;
-    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    background-color: rgba(var(--pure-material-onsurface-rgb, 255, 255, 255), 0.6);
     box-shadow: none;
     outline: none;
     opacity: 0;
@@ -1232,7 +1252,7 @@ width: 38% !important;
     box-sizing: border-box;
     margin: 3px 11px 3px 1px;
     border: solid 2px; /* Safari */
-    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    border-color: rgba(var(--pure-material-onsurface-rgb, 255, 255, 255), 0.6);
     border-radius: 2px;
     width: 16px;
     height: 16px;
@@ -1303,7 +1323,7 @@ width: 38% !important;
 
 .pure-material-checkbox > input:checked:active + span::before {
     border-color: transparent;
-    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    background-color: rgba(var(--pure-material-onsurface-rgb, 255, 255, 255), 0.6);
 }
 
 /* Disabled */
@@ -1312,7 +1332,7 @@ width: 38% !important;
 }
 
 .pure-material-checkbox > input:disabled + span {
-    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    color: rgba(var(--pure-material-onsurface-rgb, 255, 255, 255), 0.38);
     cursor: initial;
 }
 
@@ -1326,40 +1346,56 @@ width: 38% !important;
     background-color: currentColor;
 }
 .CarsLisitingAndPagination{
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
 }
 .CarsLisitingAndPagination .CarList{
-    width: 100%;
+    width: 92%;
+    margin: 50px auto 50px;
 }
 .CarsLisitingAndPagination .CarList ul{
     width: 100%;
+    display:  flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.CarsLisitingAndPagination .CarList :after {
+    content: "";
+    flex: auto;
 }
 .CarsLisitingAndPagination .CarList ul li {
-    width: 100%;
+    width: calc(25% - 15px);
+    margin-bottom: 20px;
+    /* padding-bottom: 10px; */
+    margin-right: 15px;
+}
+.CarsLisitingAndPagination .CarList ul li:nth-child(4n) {
+  
+    margin-right: 0px;
 }
 .CarsLisitingAndPagination .CarList ul li .Box{
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 13px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, .1) 1px 2px 3px;
-    background-color: #fff;
+    background-color: #333333;
     position: relative;
+    padding-bottom: 13px;
 }
 
 .CarsLisitingAndPagination .CarList ul li .CarImage{
-    width: 40%;
-  
+    width: 100%;
 }
 .CarsLisitingAndPagination .CarList ul li .CarDetails{
     box-sizing: border-box;
-    width: 60%;
-padding: 20px 30px 0;}
+    width: 100%;
+    padding: 15px 15px 0;
+    }
 .CarsLisitingAndPagination .CarList ul li .CarDetails h2{
-    color: #363636;
+    color: #ffffff;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1378,17 +1414,15 @@ padding: 20px 30px 0;}
     .CarsLisitingAndPagination .CarList ul li .CarDetails .MoreDetails p{
         width: 60%;
         font-size: 15px;
-        color: #999;
+        color: #d0d0d0;
     }
     .CarsLisitingAndPagination .CarList ul li .CarDetails .MoreDetails p:nth-child(2n){
-        width: 30%;
-        font-size: 15px;
-        color: #999;
+        width: 39%;
     }
     .CarsLisitingAndPagination .CarList ul li  .CarDetails .MoreDetails p span{
         width: 35%;
         font-size: 15px;
-        color: #111;
+        color: #fdfdfd;
         padding-left: 5px;
     }
     
@@ -1401,7 +1435,7 @@ padding: 20px 30px 0;}
         flex-flow: row wrap;
         justify-content: space-between;
         margin-top: 20px;
-        padding-top: 15px;
+        padding-top: 4px;
         border-top: 1px rgba(0, 0, 0, .1) solid;
     }
 
@@ -1410,17 +1444,13 @@ padding: 20px 30px 0;}
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
-        margin: auto 0;
-      
-    
+        margin: 0 0 7px;
     }
     .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .CarPrice i{
-        color: #9b9b9b;
+        color: #dcdcdc;
         font-size: 14px;
         font-weight: 300;
         text-transform: capitalize;
-      
-    
     }
     .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .Buttons{
 width: auto;
@@ -1433,15 +1463,15 @@ display: flex;
         padding:12px 10px 10px;
         text-align: center;
         box-sizing: border-box;
-        border: #666 1px solid;
-        color: #666;
+        border: #fff 1px solid;
+        color: #fff;
         font-size: 16px;
         margin-right: 10px;
         border-radius: 30px;
-        line-height: 16px;cursor: pointer;
+        line-height: 16px;
+        cursor: pointer;
         transition: all .3s;
-       
-            }
+        }
             .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .Buttons .ViewDetBtn:hover{
               
                 background-color: #e9e9e9;
@@ -1462,7 +1492,7 @@ display: flex;
                 cursor: pointer;
                 box-shadow: rgb(255, 0, 0,0.7) 1px 5px 10px;
                 transition: all .3s;
-                    }
+                }
                     .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .Buttons .OrderBtn:hover{
               
                       box-shadow: rgb(255, 0, 0,0.0) 0px 0px 0px;
