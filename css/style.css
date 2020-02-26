@@ -411,9 +411,9 @@ display: none;}
     }
     .menu ul li:hover a {
         /*text-shadow: 1px -1px 1px #000;*/
-        color: #0e3040;
+        color: #ff0000 !IMPORTANT;
         transition: all .3s;
-        background: #fff;
+        /* background: #fff; */
     }
     .active-menu a {
         color: #393939 !important;
