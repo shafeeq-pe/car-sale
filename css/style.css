@@ -411,9 +411,9 @@ display: none;}
     }
     .menu ul li:hover a {
         /*text-shadow: 1px -1px 1px #000;*/
-        color: #ff0000 !IMPORTANT;
+        color: #0e3040;
         transition: all .3s;
-        /* background: #fff; */
+        background: #fff;
     }
     .active-menu a {
         color: #393939 !important;
@@ -1383,8 +1383,10 @@ position: absolute !important;
     width: 100%;
 }
 .CarsLisitingAndPagination .CarList{
-    width: 92%;
+    width: 100%;
     margin: 50px auto 50px;
+    box-sizing: border-box;
+    padding: 0 50px;
 }
 .CarsLisitingAndPagination .CarList ul{
     width: 100%;
