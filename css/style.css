@@ -1001,18 +1001,27 @@ width: 38% !important;
     position: fixed !important;
     height: 100vh;
     background: #151515;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
     padding-top: 81px;
     box-sizing: border-box;
 }
 .StickySidebar{
    
 display: block;
-   width: 100%;
-   left: 0;
-max-height: calc(100vh - 130px) !important;
+   
+width: 100%;
+   
+left: 0;
+   
+max-height: calc(100vh - 64px) !important;
+   
 top: 80px;
+   
+/* flex-shrink: 14; */
+   
 position: absolute !important;
+   
+height: calc(100% - 64px) !important;
 }
 .FiltersHead {
     padding: 19px;
@@ -1044,6 +1053,7 @@ position: absolute !important;
     width: 100%;
     max-width: 100%;
     /* background: #FFF; */
+    height: auto;
   }
   
   .accordion .link {
@@ -1063,7 +1073,7 @@ position: absolute !important;
   
   .accordion li:last-child .link { border-bottom: 0; }
   
-  .accordion li i {
+  .accordion li .link i {
     position: absolute;
     top: 16px;
     left: 12px;
@@ -1074,7 +1084,7 @@ position: absolute !important;
     transition: all 0.4s ease;
   }
   
-  .accordion li i.fa-chevron-down {
+  .accordion li i.fa-chevron-right {
     right: 12px;
     left: auto;
     font-size: 16px;
@@ -1085,7 +1095,7 @@ position: absolute !important;
   
   .accordion li.open i {/* color: #ff0000; */}
   
-  .accordion li.open i.fa-chevron-down {
+  .accordion li.open i.fa-chevron-right {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
@@ -1098,21 +1108,59 @@ position: absolute !important;
   
   
   .AccordionContent {
-    display: none;
     background: #1d1d1d;
     font-size: 14px;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    transition: all .3s;
+    display: block;
+    height: 100%;
+  }
+  .Opened{
+    left: 0%;
+    transition: all .3s;
   }
   .ScrollContents{
       width: 100%;
-      max-height: 250px;
+      max-height: 100%;
       overflow: hidden;
+      position: absolute;
+      top: 0;
   }
+
+  .ActiveFilterHead{
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      padding: 11px 10px 5px;
+      box-sizing: border-box;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      left: 0;
+      background: #1d1d1d;
+      z-index: 99999;
+  }
+  .CloseFilter{
+      width: 42px;
+      display: block;
+      color: #fff;
+      height: 42px;
+      padding: 12px 11px;
+      box-sizing: border-box;
+      cursor: pointer;
+      font-size: 19px;
+  }
+  .ActiveFilterHead h2{margin: auto 0;color: #fff;width: calc(100% - 47px);text-align: center; padding-right: 30px; box-sizing: border-box;}
   .SearchValues{
       width: 90%;
       padding: 10px;
       display: block;
       box-sizing: border-box;
-      margin: 10px auto 5px;
+      margin: 8px auto 5px;
       border-radius: 50px;
       border:1px solid #c2c2c2;
       outline: none !important;
@@ -1121,6 +1169,7 @@ position: absolute !important;
       background: transparent;
       color: #fff;
   }
+  
   .SearchValues:focus{
    
     border:1px solid #ff4646;
@@ -1190,8 +1239,11 @@ position: absolute !important;
 }
   
 
-  
-  .AccordionContent ul li {border-bottom: 1px solid #2f2f2f;}
+.AccordionContent ul{
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+    margin-top: 15px;
+}
+  .AccordionContent ul li {border-bottom: 1px solid rgba(255, 255, 255, 0.11);}
   
   .AccordionContent label {
     display: block;
