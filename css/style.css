@@ -249,22 +249,27 @@ body {
     border-bottom: 2px solid transparent;
 }
 .special-menu-item{
-display: none;}
-.menu ul li:nth-last-of-type(2){
-    display: none;
 }
+
 
 .menu ul  .special-menu-item a {
     background: transparent;
     border-radius: 50px;
     padding: 5px 25px !important;
     border: 1px solid #ff3122 !important;
-    background: #ff3122;
+    background: transparent;
+    color: #ff3122 !important;
+}
+.menu ul  .special-menu-item:last-of-type a {
+    background: transparent;
+    border-radius: 50px;
+    padding: 5px 25px !important;
+    border: 1px solid #ff3122 !important;
+    background: #ff3122 !important;
     color: #fff !important;
 }
 .menu ul  .special-menu-item a:hover {
-    background: #fff !important;
-    color: #ff3122 !important;
+    background: rgba(255, 255, 255, 0.07) !important;
 }
 .menu_icon {
     display: none;
@@ -409,11 +414,11 @@ display: none;}
         color: #fff;
         transition: all .3s;
     }
-    .menu ul li:hover a {
+    .menu ul li a:hover {
         /*text-shadow: 1px -1px 1px #000;*/
         color: #0e3040;
         transition: all .3s;
-        background: #fff;
+        background: rgba(255, 255, 255, 0.07);
     }
     .active-menu a {
         color: #393939 !important;
@@ -505,7 +510,7 @@ display: none;}
     box-sizing: border-box;
     transition: all .3s;
     font-size: 16px !important;
-    color: #999;
+    color: #333 !important;
     line-height: 30px !important;
 }
 .Header_fixed .submenu ul li a {
@@ -1562,7 +1567,9 @@ display: flex;
         }
             .CarsLisitingAndPagination .CarList ul li .CarDetails .PriceAndButton .Buttons .ViewDetBtn:hover{
               
-                background-color: #e9e9e9;
+background-color: #e9e9e9;
+              
+color: #000;
             }
             
 
