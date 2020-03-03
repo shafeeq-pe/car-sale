@@ -1,0 +1,132 @@
+
+.ProductDetailPage{
+    background-color: #0c0c0c;
+}
+.DetailsTitleBar {
+    background: var(--G5);
+    color: var(--White);
+}
+.DetailsTitleBar .Model span {
+    border-color: var(--White);
+}
+ .DetailsTitleBar .BrandAndModel .BackToBtn {
+   
+    color: var(--White);
+
+}
+
+
+ .PriceAndBook {
+    
+    color: var(--White);
+}
+         
+ .PriceAndBook .ActualPriceArea .PriceDetails .Label {
+    color: var(--G2); 
+ }
+ .PriceAndBook .ActualPriceArea .Price {
+    border-color: var(--G3) !important;
+}
+
+.PriceAndBook .BtnsArea .BookBtn {
+
+    background:var(--GRADIENT);
+    color:var(--White);
+    box-shadow: var(--MiniTransparentBlack) 1px 5px 10px;
+  
+   
+}
+
+
+
+
+.ProductDetailPage .DetailsTitleBar .AddToFavourBtn {
+ 
+    color: var(--White);
+    background-color: var(--MiniTransparentBlack);
+}
+.ProductDetailPage .DetailsTitleBar .AddToFavourBtn.Active {
+ 
+    
+    background-color: var(--RED);
+}
+.ProductDetailPage .DetailsTitleBar .AddToFavourBtn:hover {
+ 
+
+    background-color: var(--RED);
+}
+
+
+.ProductDetailPage .ViewDetailsAndImages .ViewDetails h1{
+    color: var(--G2);
+}
+
+
+.ViewDetails .PriceAndMileageWrap .PriceBlock, .ViewDetails .PriceAndMileageWrap .MileageBlock {
+    background: var(--G6);
+}
+.ViewDetails .PriceAndMileageWrap .PriceBlock h3, .ViewDetails .PriceAndMileageWrap .MileageBlock h3 {
+    color: var(--White);
+}
+.ViewDetails .PriceAndMileageWrap .PriceBlock h5, .ViewDetails .PriceAndMileageWrap .MileageBlock h5 {
+    color: var(--G2);
+}
+.ViewDetails .CarMainDetailsWrap .DetailBlock {
+    background: var(--G6);
+}
+.ViewDetails .CarMainDetailsWrap .DetailBlock p {
+    color: var(--G2);
+}
+.ViewDetails .CarMainDetailsWrap .DetailBlock h3{
+    color: var(--White);
+}
+.ViewDetails .GuaranteeBlock{
+    background: rgba(53, 232, 41, 0.03);
+    border: 1px solid rgba(53, 232, 41, 0.2);
+}
+.ViewDetails .GuaranteeBlock  .Icon {
+    background: rgba(255, 255, 255, 0.055);
+    color: var(--GREEN);
+   
+}
+
+.ViewDetails .GuaranteeBlock  h3{
+    color: var(--GREEN);
+}
+
+.ViewDetails .GuaranteeBlock  p {
+   
+    color: #68866d;
+   
+}
+
+
+.ProductDetailPage .lSSlideOuter .lSPager.lSGallery li.active{
+    border-color: var(--RED);
+    
+}
+.VehicleInformation {
+    background: var(--G6);
+}
+ .VehicleInformation h2{
+    color: var(--White);
+}
+
+
+.VehicleInformationDetails ul li{
+    color: var(--White);
+    border-top: 1px solid rgba(255, 255, 255, 0.027);
+}
+
+
+.VehicleInformation  .VehicleInformationDetails   ul li label{
+    color: var(--G2);
+                
+}
+
+
+
+.VehicleInformation  .VehicleInformationDetails   ul li.Active label{
+    color: var(--GREEN);
+                
+}

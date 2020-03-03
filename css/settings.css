@@ -1,0 +1,60 @@
+
+:root {
+   
+  
+    --White: #FFFFFF;
+    --Black: #000000;
+    --GREEN: #0CD332;
+    --RED: #FD0E1A;
+    --ORANGE: #FF770E;
+    --TUR: #0CD3C4;
+    --TURBLUE: #0cadd3;
+    --OCRE: #d19101;
+    --GrBrown: #434343;
+    --G4: #5D5D5D;
+    --G8: #707070;
+    
+ 
+  
+  
+    --Charcoal: #30302e;
+    --G7: #2e2e2e;
+    --G6: #171717;
+    --G5: #212121;
+    --G3: #8B8B8B;
+    --TransparentBlack:rgba(7, 5, 5, 0.5);
+    --MiniTransparentBlack:rgba(0, 0, 0, 0.2);
+    --GRADIENT: linear-gradient(to right, #FD0E1A, #FF770E);
+    --GradientBlack: linear-gradient(to bottom, #000000, #000000 27%, #383838 71%, #363636);
+    --TransparentFullBlack:rgba(33, 33, 33, 0.9);
+  
+    
+    --LightShadow: rgba(108, 118, 134, 0.15) 0px 0.005rem 0.25rem !important;
+    --ShdowDark:  10px 10px 6px 0 rgba(0, 0, 0, 0.16);
+  
+  
+  
+ 
+    --OFF: #F8F8F8;
+    --G2: #B9B9B9;
+    --G1: #E8E8E8;
+    --PGrey: #d1d1d1;
+    --TransparentWhite:rgba(255, 255, 255, 0.5);
+    --MiniTransparentWhite:rgba(255, 255, 255, 0.2); 
+     --ShdowWhite:  10px 10px 6px 0 rgba(255, 255, 255, 0.16);
+     --LightShadowWhite: rgba(255, 255, 255, 0.15) 0px 0.005rem 0.25rem !important;
+  
+  }
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}

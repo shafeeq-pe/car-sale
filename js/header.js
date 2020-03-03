@@ -2,9 +2,9 @@ if (document.documentElement.clientWidth > 980) {
 $(window).scroll(function () {
     var sc = $(window).scrollTop()
     if (sc > 80) {
-        $(".header").addClass("white-bg");
+        $(".header").addClass("FixedHeader");
     } else {
-        $(".header").removeClass("white-bg");
+        $(".header").removeClass("FixedHeader");
     }
 });
 }

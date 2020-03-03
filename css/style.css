@@ -126,7 +126,7 @@ body {
     box-sizing: border-box;
     position: fixed;
     left: 0;
-    background: #00000052 !important;
+    background: rgba(0, 0, 0, 0.3215686274509804) !important;
     top: 0;
     z-index: 99999;
     transition: all 0.4s ease-in-out;
@@ -153,24 +153,32 @@ body {
 .logo a {
     display: block;
 }
-.white-bg {
+.FixedHeader {
     background-color: #000 !important;
     transition: all .3s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px;
     -moz-box-shadow: rgba(126, 126, 126, 0.25) 0px 4px 10px;
 }
-.white-bg .logo {
+.InnerHeader{
+    background-color: #000 !important;
+    padding: 0 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.FixedHeader .logo {
     width: 155px;
     padding: 18px 0 18px;
 }
-.white-bg .menu-right {
+.FixedHeader .menu-right {
     margin-top: 28px;
 }
-.white-bg .menu-right a {
+.FixedHeader .menu-right a {
     color: #333;
 }
-.white-bg .menu-right .menu ul  .special-menu-item {
+.FixedHeader .menu-right .menu ul  .special-menu-item {
     color: #fff !important;
     
 }
@@ -205,7 +213,7 @@ body {
 }
 .menu-right {
     float: right;
-    margin: 36px 0 0;
+    margin: 28px 0 0;
     transition: all .3s;
     position: relative;
     z-index: 99;
@@ -435,7 +443,7 @@ body {
         transition: all .3s;
         top: 50px;
     }
-    .white-bg .submenu-btn:hover .submenu {
+    .FixedHeader .submenu-btn:hover .submenu {
         opacity: 1;
         visibility: visible;
         transition: all .3s;
@@ -599,12 +607,13 @@ footer {
 }
 .CreativeDesignLinks {
     width: 25%;
+    width: auto;
 }
 .end-footer {
     width: 100%;
     text-align: left;
     /* max-width: 1300px; */
-    border-top: 1px solid #8FB3C5;
+    border-top: 1px solid #000000;
     padding: 1% 0;
     margin: 3% auto 0;
 }
@@ -1418,7 +1427,7 @@ height: calc(100% - 64px) !important;
     padding:18px 10px 10px;
     text-align: center;
     box-sizing: border-box;
-    background-color: #ff3122;
+    background:var(--GRADIENT);
     border:none;
     color: #fff;
     font-size: 16px;
@@ -1482,6 +1491,12 @@ height: calc(100% - 64px) !important;
 .CarsLisitingAndPagination .CarList ul li .CarImage{
     width: 100%;
 }
+
+
+
+
+
+
 .CarsLisitingAndPagination .CarList ul li .CarDetails{
     box-sizing: border-box;
     width: 100%;
@@ -1594,3 +1609,400 @@ color: #000;
                       transition: all .3s;
                     }
                     
+
+
+
+
+
+
+
+
+                    /* VIew Page  */
+
+                    .ProductDetailPage {
+                        position: relative;
+                        padding-top: 80px;
+                   }
+
+
+                   
+                   .ProductDetailPage, .ProductDetailPage *  {
+                    box-sizing: border-box;
+               }
+                    .ProductDetailPage .DetailsTitleBar {
+                        width: 100%;
+                        padding: 15px 5%;
+                        position: sticky;
+                        left: 0;
+                        top: 80px;
+                        z-index: 999;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-between;
+                   }
+                    .ProductDetailPage .DetailsTitleBar .BrandAndModel {
+                        font-size: 24px;
+                        font-weight: bold;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                        text-align: left;
+                        display: flex;
+                        flex-flow: row wrap;
+                        width: auto;
+                   }
+                    .ProductDetailPage .DetailsTitleBar .BrandAndModel .BackToBtn {
+                        margin: auto 0;
+                        background: none;
+                        font-size: 20px;
+                        border: none;
+                        cursor: pointer;
+                        padding: 10px 10px;
+                   }
+                    .ProductDetailPage .DetailsTitleBar .BrandAndModel .Brand {
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50px;
+                        margin: auto 0;
+                        margin-left: 10px;
+                        overflow: hidden;
+                   }
+                    .ProductDetailPage .DetailsTitleBar .BrandAndModel .Brand img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                   }
+                    .ProductDetailPage .DetailsTitleBar .BrandAndModel .Model {
+                        margin: auto 0;
+                        margin-left: 15px;
+                        display: flex;
+                        flex-flow: row wrap;
+                   }
+                    .ProductDetailPage .DetailsTitleBar .BrandAndModel .Model span {
+                        margin-right: 10px;
+                        border-right: 4px solid;
+                        padding-right: 10px;
+                   }
+                    .ProductDetailPage .DetailsTitleBar .BrandAndModel .Model span:last-of-type {
+                        border: none;
+                   }
+                   
+                .PriceAndBook {
+                    width: auto;
+                    margin-top: 105px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    margin: auto 0;
+               }
+               
+    
+           .PriceAndBook .ActualPriceArea {
+                    display: flex;
+                    width: auto;
+                    flex-flow: row wrap;
+                    margin-right: 20px;
+               }
+         .PriceAndBook .ActualPriceArea .PriceDetails {
+                    display: block;
+                    width: auto;
+                    line-height: 17px;
+                    margin: auto;
+               }
+           
+             .PriceAndBook .ActualPriceArea .PriceDetails .Label {
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: lighter;
+                    line-height: 1.35;
+                    vertical-align: middle;
+                    text-align: left;
+                    padding-left: 12px;
+               }
+               .PriceAndBook .ActualPriceArea .Price {
+                    display: inline-block;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: normal;
+                    vertical-align: middle;
+                    text-align: left;
+                    padding-left: 12px;
+                    border-left: 1px solid;
+                    margin: auto;
+                    margin-left: 20px;
+               }
+            .PriceAndBook .ActualPriceArea .Price .IfNeg{
+                display: inline-block;
+                font-size: 13px;
+                font-weight: lighter;
+                font-style: italic;
+           }
+          .PriceAndBook .BtnsArea {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+               }
+               .PriceAndBook .BtnsArea .BookBtn {
+                    display: block;
+                    width: 160px;
+                    text-align: center;
+                    padding:15px 10px 12px;
+                    text-align: center;
+                    box-sizing: border-box;
+                    border:none;
+                    font-size: 16px;
+                    line-height: 16px;
+                    cursor: pointer;
+                    transition: all .3s;
+                    outline: none;
+                    border-radius: 120px;
+                    margin: auto 0;
+                    transition: all .3s;
+                   
+               }
+                .PriceAndBook .BtnsArea .BookBtn .Icon{
+                padding-left: 10px;
+                transition: all .3s;
+               
+           }
+        
+        
+    .PriceAndBook .BtnsArea .BookBtn:hover .Icon{
+            padding-left: 5px;
+            transition: all .3s;
+              
+          }
+      
+
+                    .ProductDetailPage .ViewDetailsAndImages {
+                        width: 100%;
+                        padding: 70px 5%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-flow: row wrap;
+                        margin: 0 auto;
+                      
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails {
+                        width: 49%;
+                        max-width: 550px;
+                   }
+                   .ProductDetailPage .ViewDetailsAndImages .ViewDetails h1{
+                    width: 100%;
+                    text-align: left;
+                    font: 25px;
+                    padding-bottom: 15px;
+               }
+    
+                   .ProductDetailPage .ViewDetailsAndImages .ViewDetails  .CarDetailsScroll{
+                       
+                       overflow: hidden;
+    
+                }
+
+
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap {
+                        margin-top: 20px;
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMileageWrap {
+                        width: 100%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-between;
+                        margin-bottom: 16px;
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMileageWrap .MileageBlock {
+                        width: calc(50% - 6px);
+                        display: flex;
+                        height: 110px;
+                        text-align: center;
+                        border-radius: 5px;
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMileageWrap .MileageBlock span {
+                        margin: auto 0;
+                        display: block;
+                        width: 100%;
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMileageWrap .PriceBlock {
+                        width: 48%;
+                        display: flex;
+                        height: 110px;
+                        text-align: center;
+                        border-radius: 5px;
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMileageWrap .PriceBlock span {
+                        margin: auto 0;
+                        display: block;
+                        width: 100%;
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMileageWrap h3 {
+                        font-size: 30px;
+                        font-weight: bold;
+                        line-height: 30px;
+                        padding-top: 5px;
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMileageWrap h5 {
+                        font-size: 18px;
+                        font-weight: normal;
+                        line-height: 20px;
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap {
+                        width: 100%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-between;
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap .DetailBlock {
+                        width: calc(33.33% - 10px);
+                        display: flex;
+                        height: 80px;
+                        text-align: center;
+                        border-radius: 5px;
+                        margin-bottom: 16px;
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap .DetailBlock span {
+                        margin: auto 0;
+                        display: block;
+                        width: 100%;
+                   }
+               
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap p {
+                        font-size: 15px;
+                        font-weight: normal;
+                        line-height: 30px;
+                   }
+                    .ProductDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap h3 {
+                        font-size: 18px;
+                        font-weight: bold;
+                        line-height: 20px;
+                   }
+
+                 
+
+                   .GuaranteeBlock{
+                       width: 100%;
+                        display: flex;
+                        text-align: left;
+                        border-radius: 5px;
+                        flex-flow: wrap;
+                        margin-top: 25px;
+                        padding: 20px;
+                        
+                   }
+
+     .ProductDetailPage .ViewDetailsAndImages .ViewDetails .GuaranteeBlock  .Icon {
+                    font-size: 25px;
+                    font-weight: normal;
+                    line-height: 30px;
+                    /* padding-bottom: 15px; */
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 41px;
+                    text-align: center;
+                    padding: 6px 0;
+                    margin-bottom: 15px;
+               }
+               .ProductDetailPage .ViewDetailsAndImages .ViewDetails .GuaranteeBlock  h3 {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 20px;
+                margin: auto 0 auto 15px;
+                padding-bottom: 15px;
+           
+           }
+                   .ProductDetailPage .ViewDetailsAndImages .ViewDetails .GuaranteeBlock  p {
+                    font-size: 14px;
+                    font-weight: lighter;
+                    line-height: 18px;
+               }
+           
+               
+                   
+                    .ProductDetailPage .ViewDetailsAndImages .ViewImages {
+                        width: 48%;
+                        max-width: 812px;
+                        height: max-content;
+                        position: sticky;
+                        top: 185px;
+                   }
+
+
+
+                    .ProductDetailPage .ViewDetailsAndImages .ViewImages .CarImagesGallery {
+                        margin-top: 20px;
+                   }
+                   .lSSlideOuter .lSPager.lSGallery img {
+                    
+                    width: 100%;
+                }
+
+                  
+                .lSSlideOuter .lSPager.lSGallery li{
+                    
+                   opacity: 0.5;
+                   transition: all .3s;
+                   padding: 0;
+                   filter: grayscale(100%);
+                   box-sizing: border-box;
+                }
+                .lSSlideOuter .lSPager.lSGallery li.active{
+                    transition: all .3s;
+                    opacity:1;
+                    border-radius: 0 !important;
+                    border: 0px solid ;
+                    padding: 2px;
+                    filter: grayscale(0%);
+                 }
+                 .lSSlideOuter .lSPager.lSGallery li:hover{
+                    transition: all .3s;
+                    opacity:1;
+                    border-radius: 0 !important;
+                    border: 0px solid ;
+                    padding: 2px;
+                    filter: grayscale(0%);
+                 }
+.OtherDetails {
+    width: 100%;
+    margin-top: 50px;
+}
+.OtherDetails  .VehicleInformation{
+                 width: 100%;
+                 margin: 0 auto;
+             }
+
+             .OtherDetails   .VehicleInformation{
+                 width: 100%;
+                 margin-top: 15px;
+                 padding: 20px 0px;
+                 border-radius: 5px;
+             }
+
+             .OtherDetails     .VehicleInformation h2{
+                    display: inline-block;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: normal;
+                    vertical-align: middle;
+                    text-align: left;
+                    margin: auto;
+                    padding-left: 20px;
+             }
+             .OtherDetails    .VehicleInformationDetails{
+                 width: 100%;
+                 margin-top: 18px;
+             }
+             .OtherDetails   .VehicleInformation  .VehicleInformationDetails   ul{
+                width: 100%;
+            }
+            .OtherDetails    .VehicleInformation  .VehicleInformationDetails   ul li{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row wrap;
+                font-size: 15px;
+                line-height: 16px;
+                padding: 8px 20px;
+               
+            }
+
+          
