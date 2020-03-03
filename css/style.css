@@ -805,6 +805,7 @@ width: 38% !important;
     height: 36px;
     box-sizing: border-box;
     transition: all .3s;
+    color: #ffffff;
     padding: 7px 2%;
 }
 .slides-navigation a:hover {
