@@ -58,3 +58,7 @@
     text-decoration: none;
     list-style: none;
 }
+
+
+.scrollbar-macosx > .scroll-element .scroll-bar {
+    background-color: #ffffff !important;}

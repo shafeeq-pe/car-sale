@@ -1,18 +1,17 @@
 
 .ProductDetailPage{
-    background-color: #0c0c0c;
+    background-color: #f9f9f9;
 }
 .DetailsTitleBar {
-    background: var(--G5);
-    color: var(--White);
+    background: var(--G1);
+    color: var(--Black);
 }
 .DetailsTitleBar .Model span {
     border-color: var(--White);
 }
  .DetailsTitleBar .BrandAndModel .BackToBtn {
    
-    color: var(--White);
-
+color: var(--G6);
 }
 
 
@@ -22,11 +21,14 @@
 }
          
  .PriceAndBook .ActualPriceArea .PriceDetails .Label {
-    color: var(--G2); 
+    color: var(--G6);
  }
  .PriceAndBook .ActualPriceArea .Price {
-    border-color: var(--G3) !important;
+    border-color: var(--G2) !important;
+    color: var(--Black) !important;
 }
+
+.Price {}
 
 .PriceAndBook .BtnsArea .BookBtn {
 
@@ -58,36 +60,35 @@
 
 
 .ProductDetailPage .ViewDetailsAndImages .ViewDetails h1{
-    color: var(--G2);
+    color: var(--G4);
 }
 
 
 .ViewDetails .PriceAndMileageWrap .PriceBlock, .ViewDetails .PriceAndMileageWrap .MileageBlock {
-    background: var(--G6);
+    background: var(--G1);
 }
 .ViewDetails .PriceAndMileageWrap .PriceBlock h3, .ViewDetails .PriceAndMileageWrap .MileageBlock h3 {
-    color: var(--White);
+    color: var(--G6);
 }
 .ViewDetails .PriceAndMileageWrap .PriceBlock h5, .ViewDetails .PriceAndMileageWrap .MileageBlock h5 {
-    color: var(--G2);
+    color: var(--G4);
 }
 .ViewDetails .CarMainDetailsWrap .DetailBlock {
-    background: var(--G6);
+    background: var(--G1);
 }
 .ViewDetails .CarMainDetailsWrap .DetailBlock p {
-    color: var(--G2);
+    color: var(--G4);
 }
 .ViewDetails .CarMainDetailsWrap .DetailBlock h3{
-    color: var(--White);
+    color: var(--G6);
 }
 .ViewDetails .GuaranteeBlock{
-    background: rgba(53, 232, 41, 0.03);
+    background: rgba(53, 232, 41, 0.07);
     border: 1px solid rgba(53, 232, 41, 0.2);
 }
 .ViewDetails .GuaranteeBlock  .Icon {
-    background: rgba(255, 255, 255, 0.055);
+    background: rgba(11, 167, 38, 0.055);
     color: var(--GREEN);
-   
 }
 
 .ViewDetails .GuaranteeBlock  h3{
@@ -106,22 +107,21 @@
     
 }
 .VehicleInformation {
-    background: var(--G6);
+    background: var(--White);
 }
  .VehicleInformation h2{
-    color: var(--White);
+    color: var(--G6);
 }
 
 
 .VehicleInformationDetails ul li{
-    color: var(--White);
-    border-top: 1px solid rgba(255, 255, 255, 0.027);
+    color: var(--Black);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 
 .VehicleInformation  .VehicleInformationDetails   ul li label{
-    color: var(--G2);
-                
+    color: var(--G4);
 }
 
 
