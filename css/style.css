@@ -542,7 +542,7 @@ footer {
     width: 100%;
     padding: 5% 5% 0;
     box-sizing: border-box;
-    background: #181b1d;
+    background: #ffffff;
 }
 .InnerFooter {
     width: 100%;
@@ -588,7 +588,7 @@ footer {
 .FooterHeads h4 {
     text-align: left;
     display: inline-block;
-    color: #ffffff;
+    color: #000000;
     font-size: 1.1vmax;
     line-height: 1vmax;
     text-transform: uppercase;
@@ -613,13 +613,13 @@ footer {
     width: 100%;
     text-align: left;
     /* max-width: 1300px; */
-    border-top: 1px solid #000000;
+    border-top: 1px solid #c7c4c4;
     padding: 1% 0;
     margin: 3% auto 0;
 }
 .end-footer p {
     display: inline-block;
-    color: #fff !important;
+    color: #484646 !important;
 }
 .end-footer a {
     float: right;
